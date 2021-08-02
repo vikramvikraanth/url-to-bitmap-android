@@ -40,7 +40,6 @@ Since version  will move from JCenter to MavenCentral
 
 Gradle
 
-   implementation 'com.github.vikramvikraanth:url-to-bitmap-android:Tag'
+   implementation 'com.github.vikramvikraanth:url-to-bitmap-android:0.0.3'
    
-   version : 0.0.3
 
