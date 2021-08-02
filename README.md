@@ -24,5 +24,23 @@
 
 //rx java
 implementation 'io.reactivex.rxjava2:rxjava:2.2.16'
+
 implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+
+Since version  will move from JCenter to MavenCentral
+
+// build.gradle (project)
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+Gradle
+
+   implementation 'com.github.vikramvikraanth:url-to-bitmap-android:Tag'
+   
+   version : 0.0.3
 
