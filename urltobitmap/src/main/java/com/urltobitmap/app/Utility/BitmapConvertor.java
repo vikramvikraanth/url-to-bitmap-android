@@ -15,7 +15,7 @@ public class BitmapConvertor {
 
     public static void UrltoBitmap(CompositeDisposable disposable,BitmapCallBack bitmapCallBack,String url){
 
-        ApiInterface service = new RetrofitBuild.getRxJavaimage(url).create(ApiInterface.class);
+        ApiInterface service = RetrofitBuild.getRxJavaimage(url).create(ApiInterface.class);
         disposable.add(service.getImagetoBitmap(url)
                 .subscribeOn(Schedulers.io())
                 .doOnSubscribe(it-> bitmapCallBack.onProgress("start"))
